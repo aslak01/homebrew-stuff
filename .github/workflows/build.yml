@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    branches: master
+
+jobs:
+  tap:
+    runs-on: macos-latest
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew tap aslak01/stuff
+  install:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew install --formula $(pwd)/Formula/*.rb
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew audit --tap aslak01/stuff
+      # Creates a dummy commit when the workflow is stale to keep it from being disabled
+      - uses: gautamkrishnar/keepalive-workflow@master
+        with:
+          committer_username: aslak01
+          committer_email: aslak01@users.noreply.github.com
