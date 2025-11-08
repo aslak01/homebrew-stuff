@@ -1,4 +1,4 @@
-class Pg < Formula
+class PgATv1_2_8 < Formula
   desc "A cli tool to search for linux distros"
   homepage "https://github.com/aslak01/pg"
   url "https://github.com/aslak01/pg/releases/download/v1.2.8/pg.tar.gz"
