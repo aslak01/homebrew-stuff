@@ -1,4 +1,4 @@
-class Pg < Formula
+class PgATv2010 < Formula
   desc "A TUI for searching torrents with vim-style navigation"
   homepage "https://github.com/aslak01/pg"
   version "v2.0.10"
