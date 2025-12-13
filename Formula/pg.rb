@@ -1,20 +1,20 @@
 class Pg < Formula
   desc "A TUI for searching torrents with vim-style navigation"
-  homepage "https://github.com/aslak01/pg"
-  version "2.2.0"
+  homepage "https://github.com/aslak01/pg3"
+  version "2.2.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/aslak01/pg/releases/download/2.2.0/pg-macos-arm64.tar.gz"
-      sha256 "a9769573110c9c73ead4664213d755a994b3f8f32c1cb12ebd1f44e9ad42666b"
+      url "https://github.com/aslak01/pg3/releases/download/2.2.1/pg-macos-arm64.tar.gz"
+      sha256 "765dfb0e87aa57167dc4a35d606ab2f867f8a99c9f64c07f8c6319e36fdbd9c1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/aslak01/pg/releases/download/2.2.0/pg-linux-x86_64.tar.gz"
-      sha256 "ccdccd39f5fec9951c1a0cfffe3f5dcd445f69b2e793bdbceac5a47e2beb4151"
+      url "https://github.com/aslak01/pg3/releases/download/2.2.1/pg-linux-x86_64.tar.gz"
+      sha256 "4901eea4605606ef3ce0be6432b00a4befa57bf246488351215dd3eb764b7c3a"
     end
   end
 
